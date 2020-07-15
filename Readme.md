@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Евгений Городилов](https://up.htmlacademy.ru/adaptive/20/user/83594).
-* Наставник: `Неизвестно`.
+- Студент: [Евгений Городилов](https://up.htmlacademy.ru/adaptive/20/user/83594).
+- Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/id549115).
 
 ---
 
