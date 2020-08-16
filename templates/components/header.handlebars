@@ -1,0 +1,42 @@
+<header class="header">
+  {{#internalLink
+    filename=filename
+    url="index.html"
+    className="logo header__logo"
+  }}
+    <img
+      class="logo__picture"
+      src="https://via.placeholder.com/150x150"
+      width="32"
+      height="32"
+      alt="Логотип"
+    />
+    <img
+      class="logo__title"
+      src="https://via.placeholder.com/150x150"
+      width="101"
+      height="18"
+      alt="Cat Energy"
+    />
+  {{/internalLink}}
+  <button class="header__menu-button" type="button"></button>
+  <nav>
+    <ul class="nav-menu">
+      <li class="nav-menu__item menu-item">
+        {{#internalLink filename=filename url="index.html"}}
+          Главная
+        {{/internalLink}}
+      </li>
+      <li class="nav-menu__item menu-item">
+        {{#internalLink filename=filename url="catalog.html"}}
+          Каталог продукции
+        {{/internalLink}}
+      </li>
+      <li class="nav-menu__item menu-item">
+        {{#internalLink filename=filename url="form.html"}}
+          Подбор программы
+        {{/internalLink}}
+      </li>
+    </ul>
+  </nav>
+</header>
