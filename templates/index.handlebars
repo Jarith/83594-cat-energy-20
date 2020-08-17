@@ -1,102 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
+  {{> head }}
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
-</head>
+  <body>
+    {{> header filename="index"}}
 
-<body>
-{{> header filename="index"}}
+    <main>
+      <section>
+        <div class="promo">
+          <h1 class="promo__title">Функциональное питаниие для котов</h1>
+          <p class="promo__description">Занялся собой? Займись котом!</p>
+          <img
+            class="promo__picture"
+            src="https://via.placeholder.com/150x150"
+            width="280"
+            height="270"
+            alt="Корм Cat Energy PRO"
+          />
+          <a class="promo__action-button action-button" href="form.html"
+            >Подобрать программу</a
+          >
+        </div>
+        <ul class="goals">
+          <li class="goal goals__item">
+            <h3 class="goal__title">Похудение</h3>
+            <p class="goal__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+              сбросить лишний вес.
+            </p>
+            <a class="goal__link" href="catalog.html">Каталог Slim</a>
+          </li>
+          <li class="goal goals__item">
+            <h3 class="goal__title">Набор массы</h3>
+            <p class="goal__description">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+              Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="goal__link" href="catalog.html">Каталог Pro</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="section-title">Как это работает</h2>
+        <ul class="product-features">
+          <li class="product-feature product-features__item">
+            <p class="product-feature__description">
+              Функциональное питаниие содержит только полезные питательные
+              вещества.
+            </p>
+          </li>
+          <li class="product-feature product-features__item">
+            <p class="product-feature__description">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.
+            </p>
+          </li>
+          <li class="product-feature product-features__item">
+            <p class="product-feature__description">
+              Замените один-два приема обычной еды на наше Функциональное
+              питаниие.
+            </p>
+          </li>
+          <li class="product-feature product-features__item">
+            <p class="product-feature__description">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              питомца!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="section-title">Живой пример</h2>
+        <p class="description">
+          Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat
+          Energy Slim. Отличный результат без изнуряющих тренировок! При этом он
+          не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <ul class="promo-results">
+          <li class="promo-result promo-results__item">
+            <h3 class="promo-result__title">5кг</h3>
+            <p class="promo-result__description">снижение веса</p>
+          </li>
+          <li class="promo-result promo-results__item">
+            <h3 class="promo-result__title">60 дней</h3>
+            <p class="promo-result__description">затрачено времени</p>
+          </li>
+        </ul>
+        <div class="expenses">
+          <p class="expenses__description">Затраты на питание:</p>
+          <p class="expenses__price">15000 руб.</p>
+        </div>
+        <div class="result-comparasion">
+          <img
+            class="result-comparasion__picture result-comparasion__picture--before"
+            src="https://via.placeholder.com/150x150"
+            width="311"
+            height="232"
+            alt="Фото кота Бориса раньше"
+          />
+          <img
+            class="result-comparasion__picture result-comparasion__picture--after"
+            src="https://via.placeholder.com/150x150"
+            width="311"
+            height="232"
+            alt="Фото кота Бориса сейчас"
+          />
+          <p class="result-comparasion__title">Было</p>
+          <div class="result-comparasion__bar"></div>
+          <p class="result-comparasion__title">Стало</p>
+        </div>
+      </section>
+    </main>
 
-<main>
-  <section>
-    <div class="promo">
-      <h1 class="promo__title">Функциональное питаниие для котов</h1>
-      <p class="promo__description">Занялся собой? Займись котом!</p>
-      <img class="promo__picture" src="https://via.placeholder.com/150x150" width="280" height="270"
-           alt="Корм Cat Energy PRO">
-      <a class="promo__action-button action-button" href="form.html">Подобрать программу</a>
-    </div>
-    <ul class="goals">
-      <li class="goal goals__item">
-        <h3 class="goal__title">Похудение</h3>
-        <p class="goal__description">
-          Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
-          на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-        </p>
-        <a class="goal__link" href="catalog.html">Каталог Slim</a>
-      </li>
-      <li class="goal goals__item">
-        <h3 class="goal__title">Набор массы</h3>
-        <p class="goal__description">
-          Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-          поможет вашему коту нарастить необходимые мышцы!
-        </p>
-        <a class="goal__link" href="catalog.html">Каталог Pro</a>
-      </li>
-    </ul>
-  </section>
-  <section>
-    <h2 class="section-title">Как это работает</h2>
-    <ul class="product-features">
-      <li class="product-feature product-features__item">
-        <p class="product-feature__description">
-          Функциональное питаниие содержит только полезные питательные вещества.
-        </p>
-      </li>
-      <li class="product-feature product-features__item">
-        <p class="product-feature__description">
-          Выпускается в виде порошка, который нужно лишь залить кипятком и
-          готово.
-        </p>
-      </li>
-      <li class="product-feature product-features__item">
-        <p class="product-feature__description">
-          Замените один-два приема обычной еды на наше Функциональное питаниие.
-        </p>
-      </li>
-      <li class="product-feature product-features__item">
-        <p class="product-feature__description">
-          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-        </p>
-      </li>
-    </ul>
-    </section>
-    <section>
-      <h2 class="section-title">Живой пример</h2>
-      <p class="description">
-        Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день.
-      </p>
-      <ul class="promo-results">
-        <li class="promo-result promo-results__item">
-          <h3 class="promo-result__title">5кг</h3>
-          <p class="promo-result__description">снижение веса</p>
-        </li>
-        <li class="promo-result promo-results__item">
-          <h3 class="promo-result__title">60 дней</h3>
-          <p class="promo-result__description">затрачено времени</p>
-        </li>
-      </ul>
-      <div class="expenses">
-        <p class="expenses__description">Затраты на питание:</p>
-        <p class="expenses__price">15000 руб.</p>
-      </div>
-      <div class="result-comparasion">
-        <img class="result-comparasion__picture result-comparasion__picture--before"
-          src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фото кота Бориса раньше">
-        <img class="result-comparasion__picture result-comparasion__picture--after"
-          src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фото кота Бориса сейчас">
-        <p class="result-comparasion__title">Было</p>
-        <div class="result-comparasion__bar"></div>
-        <p class="result-comparasion__title">Стало</p>
-      </div>
-  </section>
-</main>
-
-{{> footer filename="index"}}
-</body>
-
+    {{> footer filename="index"}}
+  </body>
 </html>
