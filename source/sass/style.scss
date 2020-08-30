@@ -1,14 +1,35 @@
 @import "normalize";
+@import "palette";
 
 @import "header";
+@import "nav-menu/nav-menu";
+@import "nav-menu/menu-item";
 
-@import "navMenu/navMenu";
-@import "navMenu/menuItem";
+@import "footer";
+@import "footer-links";
+@import "htmlacademy-logo";
+@import "social-links/social-links";
+@import "social-links/social-link";
+
+@import "goals/goals";
+@import "goals/goal";
+
+@import "product-features/product-features";
+@import "product-features/product-feature";
+
+@import "promo";
+@import "action-button";
+@import "section-title";
+
+@import "catalog";
+@import "title";
+@import "products/product";
+@import "products/products";
 
 @font-face {
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   src: url("../fonts/oswaldregular.woff2") format("woff2"),
     url("../fonts/oswaldregular.woff") format("woff");
 }

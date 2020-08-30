@@ -1,0 +1,18 @@
+.product {
+  padding: 20px 20px 14px;
+
+  &__title {
+    text-decoration: none;
+    color: $black;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: $special-dark-grey;
+  }
+}
