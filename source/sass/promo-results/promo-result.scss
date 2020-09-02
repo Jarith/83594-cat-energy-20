@@ -1,0 +1,13 @@
+.promo-result {
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 12px;
+    color: $special-dark-grey;
+  }
+}

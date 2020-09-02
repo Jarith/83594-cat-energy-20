@@ -1,0 +1,16 @@
+.contacts {
+  &__title {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $alt-black;
+  }
+
+  &__address {
+    font-family: $secondary-font;
+    font-size: 14px;
+    line-height: 20px;
+    color: $special-dark-grey;
+  }
+}
