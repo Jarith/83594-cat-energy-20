@@ -60,6 +60,14 @@ $secondary-font: "Arial", sans-serif;
   @include font(20px, 20px, $color, $fontWeight);
 }
 
+@mixin fs24-lh24($color: $black, $fontWeight: "normal") {
+  @include font(24px, 24px, $color, $fontWeight);
+}
+
+@mixin fs24-lh26($color: $black, $fontWeight: "normal") {
+  @include font(24px, 26px, $color, $fontWeight);
+}
+
 @mixin fs20-lh30($color: $black, $fontWeight: "normal") {
   @include font(20px, 30px, $color, $fontWeight);
 }

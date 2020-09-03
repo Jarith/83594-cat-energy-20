@@ -1,0 +1,5 @@
+.features {
+  &__title {
+    @include fs36-lh40();
+  }
+}

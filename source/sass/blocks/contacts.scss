@@ -1,0 +1,13 @@
+.contacts {
+  &__title {
+    @include fs16-lh18($alt-black);
+
+    text-transform: uppercase;
+  }
+
+  &__address {
+    @include fs14-lh20($special-dark-grey);
+
+    font-family: $secondary-font;
+  }
+}

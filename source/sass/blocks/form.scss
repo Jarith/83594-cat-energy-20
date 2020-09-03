@@ -1,0 +1,33 @@
+.form {
+  &__title {
+    @include fs36-lh36();
+  }
+
+  &__subtitle {
+    @include fs24-lh26();
+  }
+
+  &__description {
+    @include fs14-lh18();
+
+    text-transform: uppercase;
+  }
+
+  &__fieldset {
+    border: none;
+  }
+
+  &__text {
+    @include fs16-lh18($special-dark-grey);
+
+    text-transform: uppercase;
+  }
+
+  &__text--black {
+    color: $black;
+  }
+
+  &__text--darker {
+    color: $special-darker-grey;
+  }
+}

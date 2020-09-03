@@ -1,3 +1,4 @@
+@import "global";
 @import "fonts";
 @import "palette";
 @import "normalize";
@@ -12,11 +13,16 @@
 @import "blocks/product-feature";
 @import "blocks/promo";
 @import "blocks/action-button";
-@import "blocks/section-title";
-@import "blocks/title";
 @import "blocks/product";
 @import "blocks/additional-products";
 @import "blocks/additional-product";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/promo-example";
+@import "blocks/promo-result";
+@import "blocks/result-comparasion";
+@import "blocks/catalog";
+@import "blocks/features";
 
 body {
   font-family: $primary-font;

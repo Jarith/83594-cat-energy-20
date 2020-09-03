@@ -1,7 +1,7 @@
 .result-comparasion {
   &__title {
-    font-size: 16px;
-    line-height: 20px;
+    @include fs16-lh20();
+
     text-transform: uppercase;
   }
 }
