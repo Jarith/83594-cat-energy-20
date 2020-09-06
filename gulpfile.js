@@ -1,51 +1,87 @@
-const gulp = require("gulp");
+const { src, dest, watch, series, parallel } = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const handlebars = require("gulp-compile-handlebars");
+const rename = require("gulp-rename");
+
+const helpers = require("./helpers");
+
+const templatesFolder = "./templates";
+const sourceFolder = "./source";
+
+const paths = {
+  templates: `${templatesFolder}/*.handlebars`,
+  allTemplates: `${templatesFolder}/**/*.handlebars`,
+  components: `${templatesFolder}/components`,
+  html: `${sourceFolder}/*.html`,
+  sass: `${sourceFolder}/sass/**/*.scss`,
+  rootSass: `${sourceFolder}/sass/style.scss`,
+  dest: sourceFolder,
+  destCSS: `${sourceFolder}/css`,
+};
+
+// Templates
+
+const compileTemplates = () => {
+  const options = {
+    batch: [paths.components],
+    helpers,
+  };
+
+  return src(paths.templates)
+    .pipe(handlebars({}, options))
+    .pipe(
+      rename({
+        extname: ".html",
+      })
+    )
+    .pipe(dest(paths.dest));
+};
 
 // Styles
 
-const styles = () => {
-  return gulp.src("source/sass/style.scss")
+const styles = () =>
+  src(paths.rootSass)
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(dest(paths.destCSS))
     .pipe(sync.stream());
-}
-
-exports.styles = styles;
 
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: sourceFolder,
     },
     cors: true,
     notify: false,
     ui: false,
   });
   done();
-}
-
-exports.server = server;
+};
 
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-}
+  watch(paths.allTemplates, compileTemplates);
+  watch(paths.sass, styles);
+  watch(paths.html).on("change", sync.reload);
+};
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
+const build = parallel(compileTemplates, styles);
+
+module.exports = {
+  server,
+  styles,
+  compileTemplates,
+  build,
+  default: series(build, server, watcher),
+};

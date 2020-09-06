@@ -1,0 +1,11 @@
+.promo {
+  &__title {
+    @include fs60-lh60();
+  }
+
+  &__description {
+    @include fs20-lh20();
+
+    text-transform: uppercase;
+  }
+}

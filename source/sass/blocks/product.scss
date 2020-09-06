@@ -1,0 +1,16 @@
+.product {
+  padding: 20px 20px 14px;
+
+  &__title {
+    @include fs16-lh20();
+
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @include fs12-lh16($special-dark-grey);
+
+    font-family: $secondary-font;
+  }
+}

@@ -1,0 +1,11 @@
+.additional-product {
+  &__title {
+    @include fs16-lh16();
+  }
+
+  &__specs {
+    @include fs14-lh14();
+
+    font-family: $secondary-font;
+  }
+}

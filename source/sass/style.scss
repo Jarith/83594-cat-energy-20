@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@import "fonts";
+@import "palette";
+@import "normalize";
+@import "blocks/header";
+@import "blocks/nav-menu";
+@import "blocks/menu-item";
+@import "blocks/footer-links";
+@import "blocks/htmlacademy-logo";
+@import "blocks/social-links";
+@import "blocks/social-link";
+@import "blocks/goal";
+@import "blocks/product-feature";
+@import "blocks/promo";
+@import "blocks/action-button";
+@import "blocks/section-title";
+@import "blocks/title";
+@import "blocks/product";
+@import "blocks/additional-products";
+@import "blocks/additional-product";
+
+body {
+  font-family: $primary-font;
+}

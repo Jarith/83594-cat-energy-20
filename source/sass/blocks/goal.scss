@@ -1,0 +1,23 @@
+.goal {
+  background-color: $primary-grey;
+  padding: 24px 33px 22px 20px;
+
+  &__title {
+    @include fs24-lh37();
+
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @include fs14-lh18($special-dark-grey);
+
+    font-family: $secondary-font;
+  }
+
+  &__link {
+    @include fs16-lh16();
+
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
