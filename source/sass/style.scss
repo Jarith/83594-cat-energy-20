@@ -1,32 +1,22 @@
-$primary-font: "Oswald", sans-serif;
-$secondary-font: "Arial", "Helvetica", sans-serif;
-
-@import "normalize";
+@import "fonts";
 @import "palette";
-@import "header";
-@import "nav-menu/nav-menu";
-@import "nav-menu/menu-item";
-@import "footer-links";
-@import "htmlacademy-logo";
-@import "social-links/social-links";
-@import "social-links/social-link";
-@import "goals/goal";
-@import "product-features/product-feature";
-@import "promo";
-@import "action-button";
-@import "section-title";
-@import "title";
-@import "products/product";
-@import "additional-products";
-@import "additional-products/additional-product";
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-}
+@import "normalize";
+@import "blocks/header";
+@import "blocks/nav-menu";
+@import "blocks/menu-item";
+@import "blocks/footer-links";
+@import "blocks/htmlacademy-logo";
+@import "blocks/social-links";
+@import "blocks/social-link";
+@import "blocks/goal";
+@import "blocks/product-feature";
+@import "blocks/promo";
+@import "blocks/action-button";
+@import "blocks/section-title";
+@import "blocks/title";
+@import "blocks/product";
+@import "blocks/additional-products";
+@import "blocks/additional-product";
 
 body {
   font-family: $primary-font;

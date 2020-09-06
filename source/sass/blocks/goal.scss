@@ -3,23 +3,21 @@
   padding: 24px 33px 22px 20px;
 
   &__title {
-    font-size: 24px;
-    line-height: 37px;
+    @include fs24-lh37();
+
     text-transform: uppercase;
   }
 
   &__description {
+    @include fs14-lh18($special-dark-grey);
+
     font-family: $secondary-font;
-    font-size: 14px;
-    line-height: 18px;
-    color: $special-dark-grey;
   }
 
   &__link {
-    font-size: 16px;
-    line-height: 16px;
+    @include fs16-lh16();
+
     text-transform: uppercase;
     text-decoration: none;
-    color: $black;
   }
 }

@@ -2,17 +2,15 @@
   padding: 20px 20px 14px;
 
   &__title {
+    @include fs16-lh20();
+
     text-decoration: none;
-    color: $black;
-    font-size: 16px;
-    line-height: 20px;
     text-transform: uppercase;
   }
 
   &__description {
+    @include fs12-lh16($special-dark-grey);
+
     font-family: $secondary-font;
-    font-size: 12px;
-    line-height: 16px;
-    color: $special-dark-grey;
   }
 }

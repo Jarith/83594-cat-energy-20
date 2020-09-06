@@ -1,0 +1,5 @@
+.additional-products {
+  &__title {
+    @include fs14-lh14();
+  }
+}

@@ -1,7 +1,6 @@
 .htmlacademy-logo {
+  @include fs16-lh18($special-dark-grey);
+
   font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-dark-grey;
   text-decoration: none;
 }
