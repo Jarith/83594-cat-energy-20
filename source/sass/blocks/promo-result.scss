@@ -1,0 +1,9 @@
+.promo-result {
+  &__title {
+    @include fs24-lh24();
+  }
+
+  &__description {
+    @include fs12-lh12($special-dark-grey);
+  }
+}

@@ -17,18 +17,18 @@
         </p>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Общая информация</legend>
-          <label class="form__label" for="name">
+          <label class="form__text" for="name">
             Имя:*
           </label>
           <input
             id="name"
-            class="form-text form__input"
+            class="form__text form__input"
             type="text"
             name="name"
             placeholder="Барсик"
             required
           />
-          <label class="form__label" for="weight">
+          <label class="form__text" for="weight">
             Вес (кг):*
           </label>
           <input
@@ -40,7 +40,7 @@
             placeholder="7"
             required
           />
-          <label class="form__label" for="age">
+          <label class="form__text" for="age">
             Возраст (лет):*
           </label>
           <input
@@ -64,7 +64,7 @@
                 value="loseWeight"
                 checked
               />
-              <label class="form__label" for="loseWeight">
+              <label class="form__text form__text--darker" for="loseWeight">
                 Похудение
               </label>
             </li>
@@ -76,7 +76,7 @@
                 name="workout"
                 value="weightGain"
               />
-              <label class="form__label" for="weightGain">
+              <label class="form__text form__text--darker" for="weightGain">
                 Набор массы
               </label>
             </li>
@@ -88,15 +88,15 @@
                 name="workout"
                 value="idk"
               />
-              <label class="form__label" for="idk">
+              <label class="form__text form__text--darker" for="idk">
                 Не знаю (нужен ваш совет)
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="title">Контактные данные (владельца кота)</legend>
-          <label class="form__label" for="email">
+          <legend class="form__subtitle">Контактные данные (владельца кота)</legend>
+          <label class="form__text" for="email">
             E-mail:*
           </label>
           <input
@@ -107,7 +107,7 @@
             placeholder="kuklachev@gmail.com"
             required
           />
-          <label class="form__label" for="phone">
+          <label class="form__text" for="phone">
             Телефон:*
           </label>
           <input
@@ -121,19 +121,16 @@
           />
         </fieldset>
         <fieldset class="form__fieldset">
-          <label class="title" for="aboutCat">
-            Комментарий
-          </label>
+          <legend class="form__subtitle">Комментарий</legend>
           <textarea
             id="aboutCat"
             class="form__text"
             name="aboutCat"
             placeholder="Расскажите обо всех повадках кота"
-          >
-          </textarea>
+          ></textarea>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="title">Дополнительно</legend>
+          <legend class="form__subtitle">Дополнительно</legend>
           <ul>
             <li>
               <input
@@ -143,7 +140,7 @@
                 name="sweetener"
                 checked
               />
-              <label class="form__label" for="sweetener">
+              <label class="form__text form__text--black" for="sweetener">
                 Сахарозаменитель
               </label>
             </li>
@@ -154,7 +151,7 @@
                 type="checkbox"
                 name="drinkWater"
               />
-              <label class="form__label" for="drinkWater">
+              <label class="form__text form__text--black" for="drinkWater">
                 Питьевая&nbsp;вода
               </label>
             </li>
@@ -165,7 +162,7 @@
                 type="checkbox"
                 name="milk"
               />
-              <label class="form__label" for="milk">
+              <label class="form__text form__text--black" for="milk">
                 Молоко
               </label>
             </li>
@@ -176,13 +173,13 @@
                 type="checkbox"
                 name="vitamins"
               />
-              <label class="form__label" for="vitamins">
+              <label class="form__text form__text--black" for="vitamins">
                 Витамины
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="action-buton" type="submit">Отправить заявку</button>
+        <button class="action-button" type="submit">Отправить заявку</button>
         <span class="form-hint">*&nbsp;&#8212;&nbsp;обязательные поля</span>
       </form>
     </main>

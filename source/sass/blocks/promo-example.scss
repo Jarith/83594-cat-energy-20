@@ -1,0 +1,17 @@
+.promo-example {
+  &__title {
+    @include fs36-lh40();
+  }
+
+  &__description {
+    @include fs14-lh18($special-dark-grey);
+
+    font-family: $secondary-font;
+  }
+
+  &__expenses {
+    @include fs14-lh20();
+
+    text-transform: uppercase;
+  }
+}

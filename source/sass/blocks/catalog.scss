@@ -1,0 +1,5 @@
+.catalog {
+  &__title {
+    @include fs36-lh36();
+  }
+}
