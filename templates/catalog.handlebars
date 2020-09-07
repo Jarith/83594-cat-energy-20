@@ -2,11 +2,11 @@
 <html lang="ru">
   {{> head }}
 
-  <body>
+  <body class="container">
     {{> header filename="catalog"}}
 
     <main>
-      <section class="catalog">
+      <section class="catalog wrapper">
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="products">
           <li class="product products__item">
@@ -254,7 +254,7 @@
           </li>
         </ul>
       </section>
-      <section class="additional-products">
+      <section class="additional-products wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
         <ul class="additional-products-list">
           <li class="additional-product additional-products-list__item">
@@ -315,7 +315,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="wrapper">
         <h2 class="visually-hidden">Специальное предложение</h2>
         <div class="offer">
           <div class="offer__gift"></div>

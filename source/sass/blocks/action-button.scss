@@ -1,14 +1,23 @@
 .action-button {
   @include fs14-lh18($white);
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: $primary-green;
-  padding: 14px 26px;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
 
   &--inactive {
     color: $special-dark-grey;
-    background-color: $primary-grey;
+    background-color: $primary-light-grey;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .action-button {
+    @include fs20-lh20($white);
   }
 }

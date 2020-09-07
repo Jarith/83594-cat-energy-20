@@ -10,7 +10,9 @@
 @import "blocks/social-links";
 @import "blocks/social-link";
 @import "blocks/goal";
+@import "blocks/goals";
 @import "blocks/product-feature";
+@import "blocks/product-features";
 @import "blocks/promo";
 @import "blocks/action-button";
 @import "blocks/product";
@@ -23,7 +25,14 @@
 @import "blocks/result-comparasion";
 @import "blocks/catalog";
 @import "blocks/features";
+@import "blocks/header-container";
+@import "blocks/footer";
+@import "blocks/visually-hidden";
 
 body {
   font-family: $primary-font;
+}
+
+* {
+  box-sizing: border-box;
 }

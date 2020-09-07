@@ -1,5 +1,14 @@
 .social-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 20px 0 21px;
+  border-bottom: 1px solid $primary-grey;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .social-links {
+    width: 130px;
+    border-bottom: none;
+  }
 }

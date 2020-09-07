@@ -1,6 +1,16 @@
 .nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $white;
+  display: none;
+}
+
+.nav-menu--open {
+  display: block;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 440px;
+  }
 }

@@ -3,3 +3,9 @@
     @include fs36-lh40();
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .features {
+    border-bottom: 1px solid $primary-darker-grey;
+  }
+}

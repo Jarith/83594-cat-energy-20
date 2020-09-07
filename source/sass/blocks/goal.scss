@@ -1,16 +1,20 @@
 .goal {
-  background-color: $primary-grey;
+  background-color: $primary-light-grey;
   padding: 24px 33px 22px 20px;
 
   &__title {
     @include fs24-lh37();
 
+    margin: 0 0 22px;
     text-transform: uppercase;
   }
 
   &__description {
     @include fs14-lh18($special-dark-grey);
 
+    padding-bottom: 23px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid $primary-grey;
     font-family: $secondary-font;
   }
 
@@ -19,5 +23,34 @@
 
     text-transform: uppercase;
     text-decoration: none;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .goal {
+    padding: 77px 62px 53px 52px;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__description {
+      margin-bottom: 48px;
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .goal {
+    padding: 41px 51px 55px 52px;
+
+    &__title {
+      margin-bottom: 39px;
+    }
+
+    &__description {
+      margin-bottom: 23px;
+    }
   }
 }

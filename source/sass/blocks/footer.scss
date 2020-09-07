@@ -1,0 +1,17 @@
+.footer {
+  &__logo {
+    display: flex;
+    justify-content: center;
+    padding: 39px 0 32px;
+
+    border-bottom: 1px solid $primary-grey;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .footer {
+    &__logo {
+      padding: 0;
+    }
+  }
+}

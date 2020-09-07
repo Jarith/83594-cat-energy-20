@@ -1,4 +1,13 @@
 .footer-links {
   padding: 0 30px;
-  background-color: $primary-grey;
+  background-color: $primary-light-grey;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+  }
 }

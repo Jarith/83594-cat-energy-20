@@ -1,11 +1,15 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   padding: 11px 20px 17px;
 
   &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .header {
     display: flex;
     align-items: center;
     justify-content: space-between;

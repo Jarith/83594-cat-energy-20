@@ -5,9 +5,11 @@
   align-items: center;
   justify-content: center;
 
-  margin-right: 35px;
+  height: 66px;
 
   text-transform: uppercase;
+
+  border-top: 1px solid $primary-darker-grey;
 
   &__link {
     color: $black;
@@ -16,5 +18,11 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .menu-item {
+    border-top: none;
   }
 }

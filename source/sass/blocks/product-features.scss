@@ -1,0 +1,26 @@
+.product-features {
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .product-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 153px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .product-features {
+    display: flex;
+    justify-content: space-between;
+  }
+}

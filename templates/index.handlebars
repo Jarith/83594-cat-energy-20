@@ -2,11 +2,11 @@
 <html lang="ru">
   {{> head }}
 
-  <body>
+  <body class="container">
     {{> header filename="index"}}
 
     <main>
-      <section>
+      <section class="wrapper">
         <div class="promo">
           <h1 class="promo__title">Функциональное питаниие для котов</h1>
           <p class="promo__description">Занялся собой? Займись котом!</p>
@@ -17,9 +17,9 @@
             height="270"
             alt="Корм Cat Energy PRO"
           />
-          <a class="promo__action-button action-button" href="form.html"
-            >Подобрать программу</a
-          >
+          <a class="promo__action action-button" href="form.html">
+            Подобрать программу
+          </a>
         </div>
         <ul class="goals">
           <li class="goal goals__item">
@@ -41,7 +41,7 @@
           </li>
         </ul>
       </section>
-      <section class="features">
+      <section class="features wrapper">
         <h2 class="features__title">Как это работает</h2>
         <ul class="product-features">
           <li class="product-feature product-features__item">
@@ -70,7 +70,7 @@
           </li>
         </ul>
       </section>
-      <section class="promo-example">
+      <section class="promo-example wrapper">
         <h2 class="promo-example__title">Живой пример</h2>
         <p class="promo-example__description">
           Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat
