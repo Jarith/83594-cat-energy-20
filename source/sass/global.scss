@@ -39,3 +39,15 @@ img {
     padding: 0 110px;
   }
 }
+
+@mixin wrapper($breakpoint: null) {
+  padding: 0 20px;
+
+  @if $breakpoint == $tablet-breakpoint {
+    padding: 0 30px;
+  }
+
+  @if $breakpoint == $desktop-breakpoint {
+    padding: 0 110px;
+  }
+}

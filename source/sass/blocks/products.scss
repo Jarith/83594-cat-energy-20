@@ -1,0 +1,22 @@
+.products {
+  &__item {
+    border-top: 1px solid $special-grey;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 144px;
+  }
+}

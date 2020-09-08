@@ -19,5 +19,9 @@
 @media (min-width: $tablet-breakpoint) {
   .action-button {
     @include fs20-lh20($white);
+
+    &--inactive {
+      color: $special-dark-grey;
+    }
   }
 }

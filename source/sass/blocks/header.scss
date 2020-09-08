@@ -1,6 +1,4 @@
 .header {
-  padding: 11px 20px 17px;
-
   &__logo {
     display: flex;
     align-items: center;
@@ -10,8 +8,16 @@
 
 @media (min-width: $tablet-breakpoint) {
   .header {
+    @include wrapper($tablet-breakpoint);
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .header {
+    @include wrapper($desktop-breakpoint);
   }
 }

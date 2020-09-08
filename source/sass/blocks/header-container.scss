@@ -1,5 +1,14 @@
 .header-container {
+  @include wrapper();
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid $primary-grey;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .header-container {
+    border-bottom: none;
+  }
 }
